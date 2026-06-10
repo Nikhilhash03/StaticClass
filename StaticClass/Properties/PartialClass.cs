@@ -22,6 +22,7 @@ namespace StaticClass.Properties
             obj.maths();
             obj.science();
             obj.english();
+            obj.noname();
             
         }
     }
