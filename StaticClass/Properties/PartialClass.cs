@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 
 namespace StaticClass.Properties
 {
+    
     partial class subjects
     {
         public void maths()
         {
             Console.WriteLine("Maths is a Easy Subject");
         }
+        public virtual void bike(string name)
+        {
+            Console.WriteLine("This is S1000RR");
+        }
+    }
+    class ply:subjects
+    {
+        public override void bike(string name)
+        {
+            Console.WriteLine("This is a Ducati Panigale V4s");
+        }
+
+       
     }
     internal class PartialClass
     {
@@ -23,7 +37,9 @@ namespace StaticClass.Properties
             obj.science();
             obj.english();
             obj.noname();
-            
+            obj.bike("BMW");
+            ply x = new ply();
+            x.bike("DUCATI");
         }
     }
 }
